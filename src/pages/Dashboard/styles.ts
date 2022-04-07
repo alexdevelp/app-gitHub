@@ -61,10 +61,10 @@ export const Repos = styled.div`
     padding: 24px;
     display: flex;
     align-items: center;
-    transition: transform 0.3s;
+    transition: transform 0.1s;
 
     &:hover {
-      transform: translateX(6px);
+      transform: translateY(-6px);
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
     & + a {

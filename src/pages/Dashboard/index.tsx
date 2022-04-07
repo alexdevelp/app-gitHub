@@ -6,7 +6,7 @@ import Logo from '../../assets/logo.svg';
 import { FiChevronRight } from 'react-icons/fi';
 import { GithubRepository } from '../../interface/githubRepository';
 
-export const Dashboard: React.FC = () => {
+const Dashboard: React.FC = () => {
   const formElement = React.useRef<HTMLFormElement | null>(null);
 
   const [repos, setRepos] = React.useState<GithubRepository[]>(() => {
@@ -101,3 +101,5 @@ export const Dashboard: React.FC = () => {
     </C.Container>
   );
 };
+
+export default Dashboard;

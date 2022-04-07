@@ -8,7 +8,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { GithubRepositoryUnit } from '../../interface/githubRepositoryUnit';
 import { GithubIssues } from '../../interface/githubIssues';
 
-export const Repo: React.FC = () => {
+const Repo: React.FC = () => {
   const { state } = useLocation();
   const [repository, setRepository] = useState<GithubRepositoryUnit | null>(
     null,
@@ -76,3 +76,5 @@ export const Repo: React.FC = () => {
     </>
   );
 };
+
+export default Repo;
